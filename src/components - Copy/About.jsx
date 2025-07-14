@@ -27,7 +27,10 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-3 gap-6 mt-8">
-             
+              <!--div className="text-center">
+                <div className="text-3xl font-bold text-purple-400">3</div>
+                <div className="text-gray-400 text-sm">Projects</div>
+              </div-->
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-400">3+</div>
                 <div className="text-gray-400 text-sm">Years</div>
