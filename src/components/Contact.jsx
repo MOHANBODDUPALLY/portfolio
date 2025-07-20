@@ -79,63 +79,71 @@ const Contact = () => {
           </div>
 
           <div className="bg-slate-800/50 p-8 rounded-lg border border-slate-700/50">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-white font-medium mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
-                  placeholder="Your name"
-                />
-              </div>
+          <form
+  action="https://formsubmit.co/mohanboddupally.inbox@gmail.com"
+  method="POST"
+  className="space-y-6"
+>
+  {/* Name */}
+  <div>
+    <label htmlFor="name" className="block text-white font-medium mb-2">
+      Name
+    </label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+      placeholder="Your name"
+    />
+  </div>
 
-              <div>
-                <label htmlFor="email" className="block text-white font-medium mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
-                  placeholder="your.email@example.com"
-                />
-              </div>
+  {/* Email */}
+  <div>
+    <label htmlFor="email" className="block text-white font-medium mb-2">
+      Email
+    </label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+      placeholder="your.email@example.com"
+    />
+  </div>
 
-              <div>
-                <label htmlFor="message" className="block text-white font-medium mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors resize-none"
-                  placeholder="Tell me about your project or just say hello!"
-                ></textarea>
-              </div>
+  {/* Message */}
+  <div>
+    <label htmlFor="message" className="block text-white font-medium mb-2">
+      Message
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      required
+      rows={5}
+      className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors resize-none"
+      placeholder="Tell me about your project or just say hello!"
+    ></textarea>
+  </div>
 
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105 transform flex items-center justify-center"
-              >
-                <Send size={18} className="mr-2" />
-                Send Message
-              </button>
-            </form>
+  {/* Hidden fields (optional) */}
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+
+  {/* Submit button */}
+  <button
+    type="submit"
+    className="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105 transform flex items-center justify-center"
+  >
+    <Send size={18} className="mr-2" />
+    Send Message
+  </button>
+</form>
+
           </div>
         </div>
       </div>
