@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-700/50 mt-8 pt-8 text-center">
           <p className="text-gray-400 flex items-center justify-center">
-            Made with <Heart size={16} className="text-red-500 mx-2" /> by Mohan Boddupally
+            Made by Mohan Boddupally
           </p>
           <p className="text-gray-500 text-sm mt-2">
             © 2025 All rights reserved.
